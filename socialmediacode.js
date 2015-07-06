@@ -38,7 +38,7 @@ var locations = [
 	new Location("LA: Google", "gwc_googlela", 2015),
 	new Location("Bay Area: Electronic Arts", "gwc_ea", 2015),
 	new Location("NYC: Cambio", "cambiogwc", 2014),
-	new Location("San Francisco: ", "gwc_techwarriors", 2015),
+	new Location("Bay Area: San Francisco", "gwc_techwarriors", 2015),
 	new Location("Bay Area", "girlswhocode.bayarea", 2015),
 	new Location("NYC", "girlswhocodenyc", 2015),
 	new Location("Seattle", "girlswhocodeseattle", 2015),
