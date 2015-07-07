@@ -67,35 +67,13 @@ function showLocation(locations) {
         var locationHTML = "<div class='col-md-4 location'>" +
             "<a href='http://instagram.com/"+locations[i].instagram+"'><h3 class='locationname' style='color:#555555;'>" + locations[i].title + " (" + locations[i].year + ")</h3>" +
             "<p class='instagram' style='color:#555555;'>" +"@"+ locations[i].instagram + "</p></a>" +
-			"<iframe class='instapics' src='http://widget.websta.me/in/" + locations[i].instagram + "/?s=200&w=2&h=3&b=0&p=10' allowtransparency='true' frameborder='0' scrolling='no' style='border:none;overflow:hidden; width:420px; height: 630px' ></iframe>";
+			"<iframe src='http://widget.websta.me/in/" + locations[i].instagram + "/?s=200&w=2&h=3&b=0&p=10' allowtransparency='true' frameborder='0' scrolling='no' style='border:none;overflow:hidden;width:420px; height: 630px' ></iframe>";
         $(" #locations .row:last-child").append(locationHTML); // A jQuery method that adds the new HTML string to the last row in the movies div
 
         if(i%3==2) { $(" #locations ").append("</div>"); }
 
     }
 }
-function mobileLocation(locations) {
-    $(" #locations ").empty(); // A jQuery method which clears the movies div
-    for (var i = 0; i < locations.length; i++) {
-
-        if(i%3==0) {
-            $(" #locations ").append("<div class='row'></div>"); // A jQuery method to add a new row for every 3rd movie
-        }
-
-        // This string is the HTML that makes up each individual movie cell,
-        // It uses movie[i] attributes so that each cell has unique information
-        var locationHTML = "<div class='col-md-4 location'>" +
-            "<a href='http://instagram.com/"+locations[i].instagram+"'><h3 class='locationname' style='color:#555555;'>" + locations[i].title + " (" + locations[i].year + ")</h3>" +
-            "<p class='instagram' style='color:#555555;'>" +"@"+ locations[i].instagram + "</p></a>" +
-			"<iframe class='instapics' src='http://widget.websta.me/in/" + locations[i].instagram + "/?s=100&w=2&h=3&b=0&p=10' allowtransparency='true' frameborder='0' scrolling='no' style='border:none;overflow:hidden; width:210px; height: 315px' ></iframe>";
-        $(" #locations .row:last-child").append(locationHTML); // A jQuery method that adds the new HTML string to the last row in the movies div
-
-        if(i%3==2) { $(" #locations ").append("</div>"); }
-
-    }
-}
-
-
 
 /* sortButtonClicked
     Calls appropriate sort method based on which link was clicked and
@@ -188,24 +166,7 @@ function sortLocationsByTitle(locations) {
 
 // Code that gets run once the page has loaded. It also uses jQuery.
 $(document).ready(function () {
-	if($(window).width() <= 800){// u can choose the size of the window also.
-            sortLocationsByTitle(locations);
-			sortLocationsByYear(locations);
-			mobileLocation(locations);
-	}
-	else if($(window).width()>800){
-			sortLocationsByTitle(locations);
-			sortLocationsByYear(locations);
-			showLocation(locations);
-	}
-});
-$(window).resize(function() {
-     if($(window).width() <= 800){// u can choose the size of the window also.
-            $("whitebox").css("font-size","20px");
-			mobileLocation(locations);	
-	}
-	else if($(window).width()>800){
-			$("whitebox").css("font-size","50px");
-			showLocation(locations);
-	}
+	sortLocationsByTitle(locations);
+    sortLocationsByYear(locations);
+    showLocation(locations);
 });
