@@ -38,7 +38,7 @@ var locations = [
 	new Location("LA: Google", "gwc_googlela", 2015),
 	new Location("Bay Area: Electronic Arts", "gwc_ea", 2015),
 	new Location("NYC: Cambio", "cambiogwc", 2014),
-	new Location("San Francisco: ", "gwc_techwarriors", 2015),
+	new Location("Bay Area: San Francisco", "gwc_techwarriors", 2015),
 	new Location("Bay Area", "girlswhocode.bayarea", 2015),
 	new Location("NYC", "girlswhocodenyc", 2015),
 	new Location("Seattle", "girlswhocodeseattle", 2015),
@@ -188,6 +188,7 @@ function sortLocationsByTitle(locations) {
 
 // Code that gets run once the page has loaded. It also uses jQuery.
 $(document).ready(function () {
+<<<<<<< HEAD
 	if($(window).width() <= 800){// u can choose the size of the window also.
             sortLocationsByTitle(locations);
 			sortLocationsByYear(locations);
@@ -208,4 +209,9 @@ $(window).resize(function() {
 			$("whitebox").css("font-size","50px");
 			showLocation(locations);
 	}
+=======
+	sortLocationsByTitle(locations);
+    sortLocationsByYear(locations);
+    showLocation(locations);
+>>>>>>> origin/master
 });
