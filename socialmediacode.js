@@ -209,9 +209,4 @@ $(window).resize(function() {
 			$("whitebox").css("font-size","50px");
 			showLocation(locations);
 	}
-=======
-	sortLocationsByTitle(locations);
-    sortLocationsByYear(locations);
-    showLocation(locations);
->>>>>>> origin/master
 });
