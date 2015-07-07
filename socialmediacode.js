@@ -188,7 +188,6 @@ function sortLocationsByTitle(locations) {
 
 // Code that gets run once the page has loaded. It also uses jQuery.
 $(document).ready(function () {
-<<<<<<< HEAD
 	if($(window).width() <= 800){// u can choose the size of the window also.
             sortLocationsByTitle(locations);
 			sortLocationsByYear(locations);
