@@ -1,0 +1,49 @@
+#logo{
+	float:left; 
+	background:lightgrey; 
+	height:15%; 
+	width:15%;
+}
+#hashtagsmain{
+	background-color:#82b440
+}
+#titlebox{
+	padding-top:10px;
+}
+#whitebox{
+	background-color:white; 
+	color:#82b440; 
+	width:30%; 
+	padding:3%;
+}
+#title{
+	font-size:50px; 
+	padding:3%;
+}
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+.sort{
+	display:inline;
+}
+#navvy{
+	display:inline; 
+	color:#555555; 
+	padding:20px;
+}
+.button.alt{
+	color:#555555; 
+	padding-top:10px; 
+	padding-bottom:10px;
+}
+.hashtag{
+	padding-top:10px;
+}
+@media all and (orientation:portrait) {
+	#title{font-size:20px;}
+}
+
+
+
