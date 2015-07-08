@@ -10,8 +10,8 @@ $(document).ready(function () {
 		$("#gciframe").attr("src","http://widget.websta.me/in/tag:girlscan/?s=100&w=2&h=5&b=0&p=10");
 		$("#ciframe").attr("src","http://widget.websta.me/in/tag:coding/?s=100&w=2&h=5&b=0&p=10");
 		$("#gitiframe").attr("src","http://widget.websta.me/in/tag:girlsintech/?s=100&w=2&h=5&b=0&p=10");
-		$(".embed-responsive-item").css("height","525px");
-		$(".embed-responsive-item").css("width","50px");
+		$(".embed-responsive-item").css("height","550px");
+		$(".embed-responsive-item").css("width","250px");
 	}
 });
 $(window).resize(function() {
@@ -25,8 +25,8 @@ $(window).resize(function() {
 		$("#gciframe").attr("src","http://widget.websta.me/in/tag:girlscan/?s=100&w=2&h=5&b=0&p=10");
 		$("#ciframe").attr("src","http://widget.websta.me/in/tag:coding/?s=100&w=2&h=5&b=0&p=10");
 		$("#gitiframe").attr("src","http://widget.websta.me/in/tag:girlsintech/?s=100&w=2&h=5&b=0&p=10");
-		$(".embed-responsive-item").css("height","525px");
-		$(".embed-responsive-item").css("width","210px");
+		$(".embed-responsive-item").css("height","550px");
+		$(".embed-responsive-item").css("width","250px");
 	}
 	if($(window).width() > 800){// u can choose the size of the window also.
         $("#btgciframe").attr("src","http://widget.websta.me/in/tag:breaktheglassceiling/?s=200&w=7&h=10&b=0&p=10");
@@ -43,3 +43,16 @@ $(window).resize(function() {
 	}
 	
 });
+$(document).ready(function(){
+        //Make sure the iframe is done loading before you attach an event
+        $(".embed-responsive-item").load(function(){
+            // Get the body element
+            var frameBody = $(".embed-responsive-item").contents().find("body");
+
+            // Get all links inside the BODY tag
+            $('a', frameBody).click(function(e){
+                    //Disable all default actions       
+                    e.preventDefault();
+            });
+        });
+    });
