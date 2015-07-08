@@ -41,6 +41,14 @@ html, body {
 .hashtag{
 	padding-top:10px;
 }
+.embed-responsive-item{
+	border:none; 
+	overflow:hidden; 
+	width:1500px; 
+	height: 2100px; 
+	margin-left:3%;
+	padding:5px;
+}
 @media all and (orientation:portrait) {
 	#title{font-size:20px;}
 }
