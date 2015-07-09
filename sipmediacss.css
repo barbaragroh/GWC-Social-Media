@@ -41,9 +41,10 @@
 				font-size:100%;
 		}
 		.instapics{
+			position:relative;
 			height:100%;
 			width:100%;
-			z-index: -3; 
+			z-index: -1; 
 		}
 		/*@media(max-width: 1580px) {
 			h1 {
@@ -77,8 +78,10 @@
 			padding-bottom:10px;
 		}
 		#locations{
+			position:relative;
 			margin-left:5%;
-			background: transparent; 		
+			background: http://i.stack.imgur.com/TMCfE.png;
+			z-index:3;
 		}
 		#title2{
 			font-size:50px; 

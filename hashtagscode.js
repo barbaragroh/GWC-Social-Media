@@ -43,16 +43,3 @@ $(window).resize(function() {
 	}
 	
 });
-$(document).ready(function(){
-        //Make sure the iframe is done loading before you attach an event
-        $(".embed-responsive-item").load(function(){
-            // Get the body element
-            var frameBody = $(".embed-responsive-item").contents().find("body");
-
-            // Get all links inside the BODY tag
-            $('a', frameBody).click(function(e){
-                    //Disable all default actions       
-                    e.preventDefault();
-            });
-        });
-    });
