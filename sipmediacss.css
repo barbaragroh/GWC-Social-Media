@@ -26,12 +26,11 @@
 		}
 		#logos{
 			float:left; 
-			background:lightgrey; 
+			background:transparent; 
 			height:15%; 
 			width:15%;
 		}
 		div.transbox {
-			background-color: #ffffff;
 			border: 5px;
 			opacity: 0.6;
 		}

@@ -554,21 +554,23 @@
 /* Header */
 
 	#header {
-		color: white;
-		height: 4em;
-		background: rgba(0, 0, 0, 0.5);
+		color: #555555;
+		height: 4.9em;
+		background: white;
+		opacity:0.8;
 	}
 
 		#header .container {
-			position: relative;
+			position: fixed;
 		}
 
 	.homepage #logo {
 		display: none;
+		position:fixed;
 	}
 
 	.homepage #nav {
-		position: static;
+		position: fixed;
 		right: none;
 		text-align: center;
 	}
@@ -579,6 +581,7 @@
 		text-transform: uppercase;
 		font-size: 2em;
 		font-weight: 400;
+		padding:5px;
 	}
 
 		#logo h1 {
@@ -592,7 +595,7 @@
 		}
 
 	#nav {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		right: 0;
 	}
@@ -609,7 +612,7 @@
 			}
 
 				#nav > ul > li a {
-					color: inherit;
+					color: #555555;
 					line-height: 4em;
 					letter-spacing: 2px;
 					text-decoration: none;
@@ -623,7 +626,7 @@
 				}
 
 				#nav > ul > li.active a {
-					color: white;
+					color: #555555;
 				}
 
 				#nav > ul > li > ul {
@@ -634,17 +637,19 @@
 
 	.dropotron {
 		top: 2em;
-		background: rgba(32, 32, 32, 0.75);
+		background: white;
 		border-radius: 4px;
 		color: inherit;
 		min-width: 12em;
 		padding: 1em 0;
-		color: white;
+		color: #5555;
+		opacity:0.6;
 	}
 
 		.dropotron > li {
 			line-height: 2em;
 			padding: 0 1em;
+			opacity:0.6;
 		}
 
 			.dropotron > li > a {
@@ -655,7 +660,7 @@
 			}
 
 			.dropotron > li.active > a, .dropotron > li:hover > a {
-				color: inherit;
+				color: #82b440;
 			}
 
 		.dropotron.level-0 {
