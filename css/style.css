@@ -561,16 +561,16 @@
 	}
 
 		#header .container {
-			position: fixed;
+			position: relative;
 		}
 
 	.homepage #logo {
 		display: none;
-		position:fixed;
+		position:relative;
 	}
 
 	.homepage #nav {
-		position: fixed;
+		position: relative;
 		right: none;
 		text-align: center;
 	}
@@ -595,7 +595,7 @@
 		}
 
 	#nav {
-		position: fixed;
+		position: relative;
 		top: 0;
 		right: 0;
 	}
